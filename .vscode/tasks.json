@@ -1,0 +1,43 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Dev Server: React-Router",
+        "type": "shell",
+        "command": "npm run dev",
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "isBackground": true,
+        "problemMatcher": {
+          "pattern": [
+            {
+              "regexp": ".",
+              "file": 1,
+              "location": 2,
+              "message": 3
+            }
+          ],
+          "background": {
+            "activeOnStart": true,
+            "beginsPattern": ".*",
+            "endsPattern": "ready in .*"
+          }
+        }
+      },
+      {
+        "label": "Build: React-Router",
+        "type": "shell",
+        "command": "npm run build",
+        "group": "build"
+      },
+      {
+        "label": "Preview Build",
+        "type": "shell",
+        "command": "npm run preview",
+        "group": "test"
+      }
+    ]
+  }
+  
